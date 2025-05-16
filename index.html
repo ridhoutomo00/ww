@@ -42,7 +42,7 @@
 </head>
 <body>
   <div class="login-container">
-    <h2>Hi Ayangg, login dulu yuk</h2>
+    <h2>Hi Ayangg, login dulu yuk 💖</h2>
     <input type="text" id="username" placeholder="Username" />
     <input type="password" id="password" placeholder="Password" />
     <button onclick="login()">Login</button>
@@ -51,11 +51,11 @@
 
   <script>
     function login() {
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-      if (username === 'user' && password === 'user') {
-        // Redirect to another page or display success message
-        window.location.href = 'welcome.html'; // Ganti dengan halaman tujuan Anda
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      if (username === 'mie ayam' && password === '05082024') {
+        window.location.href = 'welcome.html'; // Ganti sesuai halaman tujuan
       } else {
         document.getElementById('message').textContent = 'Username atau password salah!';
       }
