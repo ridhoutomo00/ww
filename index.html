@@ -1,65 +1,36 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login Ayangg</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffe6f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .login-container {
-      background-color: #fff;
-      padding: 20px 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #ff66b2;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #ff3385;
-    }
-  </style>
-</head>
-<body>
-  <div class="login-container">
-    <h2>Hi Ayangg, login dulu yuk</h2>
-    <input type="text" id="username" placeholder="Username" />
-    <input type="password" id="password" placeholder="Password" />
-    <button onclick="login()">Login</button>
-    <p id="message" style="color: red;"></p>
-  </div>
+<html lang="en">
 
-  <script>
-    function login() {
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-      if (username === 'mie ayam' && password === '05092025') {
-        // Redirect to another page or display success message
-        window.location.href = 'welcome.html'; // Ganti dengan halaman tujuan Anda
-      } else {
-        document.getElementById('message').textContent = 'Username atau password salah!';
-      }
-    }
-  </script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Halaman Login</title>
+</head>
+
+<body>
+  <div class="login_container">
+    <h2>Hi👋🏼 Ayangg login dulu yuk</h2>
+    <form id="loginForm" class="login_form">
+      <input type="text" id="username" placeholder="username" />
+      <input type="password" id="password" placeholder="password" />
+      <button type="submit" id="loginBtn">Login</button>
+    </form>
+    <p class="login_description">
+      pssstttt, usernamenya isi "natasya pesek" dan passwordnya sama tanggal pertama kali ketemu
+    </p>
+  </div>
 </body>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<!-- SweetAlery -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- Main JS -->
+<script type="application/javascript" src="./scripts/index.js"></script>
+
 </html>
